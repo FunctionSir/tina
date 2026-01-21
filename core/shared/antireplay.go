@@ -7,9 +7,9 @@ import (
 	"sync"
 )
 
-// Griseo RH (Guard of anti-Replay by Incremental Seq and Epoch Order (with) Rotation Helper)
+// Dolphins (Defense using Order Legder and Protection Helper with Incremental Nums System/Scheme)
 
-// About additional key-rotation helper feature:
+// About protection (key-rotation) helper feature:
 //
 // You can set an interval, which is a power of 2, if seq % interval == 0,
 // Related functions will return a true. That means, after you process this

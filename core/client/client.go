@@ -2,7 +2,7 @@
  * @Author: FunctionSir
  * @License: AGPLv3
  * @Date: 2025-09-21 10:58:22
- * @LastEditTime: 2026-01-21 20:22:14
+ * @LastEditTime: 2026-01-21 21:13:28
  * @LastEditors: FunctionSir
  * @Description: -
  * @FilePath: /tina/core/client/client.go
@@ -370,9 +370,6 @@ func NewSproutClient(instanceDB string) (*SproutClient, error) {
 	}, nil
 }
 
-// TODO: Use Noise IK message to auth.
-// TODO: Support pluggable auth.
-// FIXME: Remove Bearer Auth Related.
 func (client *SproutClient) Connect() error {
 	// Create link context for this connection.
 	client.linkCtx, client.linkCancel = context.WithCancel(context.Background())
